@@ -520,6 +520,7 @@ img {
   --secondary-text-color: #ffffff;
   --third-text-color: #907e82;
   --accent-color: #d41443;
+  --header-bacground-color:#FFB8CA;
 }
 
 body {
@@ -528,7 +529,45 @@ body {
 }
 
 header {
-  background-color: red;
-  width: 1050px;
+  background-color: var(--header-bacground-color);
+  width: 1280px;
+}
+
+.header_color {
+  color: var(--secondary-text-color);
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+}
+
+.header_color--red {
+  color: var(--accent-color);
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 90.5%;
+  /* or 52px */
+  letter-spacing: 0.04em;
+}
+
+.secondary-button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
