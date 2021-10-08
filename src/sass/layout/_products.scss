@@ -29,11 +29,24 @@
     width: 330px;
     height: 525px;
     margin: 15px;
-    background: #FFB8CA;
-    background: #F0D1A5;
-    background: #C2E297;
+  
+  
+   
      border-radius: 24px;
 }
+
+.products-list__card.ice {
+    background: #FFB8CA;
+}
+.products-list__card.coffee {
+    background: #F0D1A5;
+}
+.products-list__card.milkshakes {
+    background: #C2E297;
+}
+
+
+
 .products-list__card::before{
 content: "";
 display:block;
