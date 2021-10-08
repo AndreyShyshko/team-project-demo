@@ -36,8 +36,8 @@
 }
 .products-list__card::before{
 content: "";
+display:block;
 width: 335px;
-height: 335px;
 background-image: url();
 }
 .products-list__title {
