@@ -1,0 +1,126 @@
+.contacts-card {
+  width: 220px;
+  height: 427px;
+  padding: 43px 20px;
+
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cafe {
+  width: 80px;
+  height: 16px;
+  margin-bottom: 25px;
+
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  text-transform: uppercase;
+
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.foodtruck {
+  width: 130px;
+  height: 16px;
+  margin-bottom: 25px;
+
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  text-transform: uppercase;
+
+  background: #c2e297;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.place-info {
+  display: block;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.schedule {
+  display: block;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.place,
+.date {
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.place-text {
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  color: #907e82;
+}
+
+.date-text {
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.contacts-tel,
+.contacts-email {
+  font-family: DM Sans;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
+}
