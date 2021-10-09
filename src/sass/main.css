@@ -488,6 +488,10 @@ img {
   background-color: var(--accent-color);
 }
 
+.socials__icon_team-color {
+  fill: #ffffff;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
