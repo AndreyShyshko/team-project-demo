@@ -1,4 +1,5 @@
 .section--advantages {
+  width: 100%;
   padding-top: 39px;
   padding-bottom: 97px;
   background-color: #fff5f6;
@@ -59,10 +60,70 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
+    padding-bottom: 0;
+    margin-bottom: 13px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
+    padding-bottom: 15px;
+  }
+}
+
+.section__subtitle--icemilk::before {
+  content: ' ';
+
+  display: block;
+  margin-bottom: 16px;
+  max-width: 33px;
+  height: 50px;
+  background-image: url();
+  background-color: #d41443;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.section__subtitle--icefruits::before {
+  content: ' ';
+
+  display: block;
+  margin-bottom: 16px;
+  max-width: 50px;
+  height: 50px;
+  background-image: url();
+  background-color: #d41443;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.section__subtitle--icecream::before {
+  content: ' ';
+
+  display: block;
+  margin-bottom: 16px;
+  max-width: 44px;
+  height: 50px;
+  background-image: url();
+  background-color: #d41443;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
   }
 }
 
