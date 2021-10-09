@@ -1,0 +1,21 @@
+.gallery__box {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gallery__picture {
+  display: block;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
