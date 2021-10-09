@@ -529,8 +529,10 @@ body {
 }
 
 .header {
+  position: relative;
   background-color: var(--header-bacground-color);
   width: auto;
+  height: auto;
   padding: 0 20px;
 }
 
@@ -542,6 +544,8 @@ body {
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+  position: relative;
+  z-index: 999;
 }
 
 @media (min-width: 768px) {
@@ -566,6 +570,8 @@ body {
   font-size: 48px;
   line-height: 96.5%;
   letter-spacing: 0.04em;
+  position: relative;
+  z-index: 999;
 }
 
 @media (min-width: 768px) {
@@ -600,6 +606,7 @@ body {
   border-radius: 20px;
   border: none;
   padding: 10px 15px;
+  z-index: 999;
 }
 
 .secondary-button:first-child {
@@ -636,5 +643,25 @@ body {
 .primary {
   color: var(--accent-color);
   background-color: var(--secondary-title-color);
+}
+
+.header_img-ellipse {
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  left: 36px;
+  top: 83px;
+}
+
+.header_img-ice-cream {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  left: 117px;
+  top: 92px;
+}
+
+.header_wrapper {
+  padding: 173px 0 160px 0;
 }
 /*# sourceMappingURL=main.css.map */
