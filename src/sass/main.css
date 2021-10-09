@@ -488,25 +488,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.socials__icon_team-color {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.socials__link:hover .socials__icon_team-color,
-.socials__link:focus .socials__icon_team-color {
-  fill: #ffffff;
-}
-
-.socials__icon_footer-color {
-  fill: #ffffff;
-}
-
-.socials__link_background {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -31,20 +31,12 @@
   }
 }
 
-.socials__icon_team-color {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .socials__icon_team-color {
+//   fill: #afb1b8;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .socials__link:hover &,
-  .socials__link:focus & {
-    fill: #ffffff;
-  }
-}
-
-.socials__icon_footer-color {
-  fill: #ffffff;
-}
-
-.socials__link_background {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+//   .socials__link:hover &,
+//   .socials__link:focus & {
+//     fill: #ffffff;
+//   }
+// }
