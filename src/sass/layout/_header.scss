@@ -1,12 +1,16 @@
-
 .header {
   position: relative;
   background-color: var(--header-bacground-color);
   width: auto;
   height: auto;
   padding: 0 20px;
+  overflow: hidden;
 
-  
+  @media (min-width:768px) {
+    padding: 0 34px;
+
+    
+  }
   &_color {
     color: var(--secondary-text-color);
     font-family: Titan One;
@@ -34,8 +38,7 @@
       line-height: 96.5%;
       letter-spacing: 0.04em;
       position: relative;
-z-index: 999
-;
+      z-index: 999;
       @media (min-width: 768px) {
         font-size: 34px;
         line-height: 90.5%;
@@ -81,6 +84,10 @@ z-index: 999
 .header_buttons {
   display: flex;
   margin-top: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: 1280px) {
     margin-top: 25px;
   }
@@ -95,15 +102,62 @@ z-index: 999
   height: 344px;
   left: 36px;
   top: 83px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 324px;
+    height: 322px;
+    left: 307px;
+    top: 31px;
+  }
 }
 .header_img-ice-cream {
   position: absolute;
   width: 171px;
-height: 410px;
-left: 117px;
-top: 92px;
-}
-.header_wrapper{
-padding: 173px 0 160px 0;
+  height: 410px;
+  left: 117px;
+  top: 92px;
 
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 143px;
+    height: 336px;
+    left: 378px;
+    top: 63px;
+  }
+}
+.header_wrapper {
+  padding: 173px 0 160px 0;
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_img-milk {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header_img-milk {
+    position: absolute;
+    width: 124px;
+    height: 126px;
+    left: 34px;
+    top: 245px;
+  }
+}
+@media (max-width: 767px) {
+  .header_img-woman {
+    display: none;
+  }
+}
+
+.header_img-woman {
+  position: absolute;
+  width: 168px;
+  height: 133px;
+  left: 566px;
+  top: 266px;
 }
