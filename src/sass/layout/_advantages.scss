@@ -47,7 +47,7 @@
   }
 }
 
-.section__subtitle {
+.advantages__title {
   padding-bottom: 16px;
 
   font-family: Titan One;
@@ -70,7 +70,7 @@
   }
 }
 
-.section__subtitle--icemilk::before {
+.advantages__title--icemilk::before {
   content: ' ';
 
   display: block;
@@ -92,7 +92,7 @@
   }
 }
 
-.section__subtitle--icefruits::before {
+.advantages__title--icefruits::before {
   content: ' ';
 
   display: block;
@@ -114,7 +114,7 @@
   }
 }
 
-.section__subtitle--icecream::before {
+.advantages__title--icecream::before {
   content: ' ';
 
   display: block;
