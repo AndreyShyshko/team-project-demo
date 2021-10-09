@@ -1,17 +1,35 @@
 .contacts {
-  background: #fff5f6;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-text-color) 10%,
+    #fff5f6 10%,
+    #fff5f6 100%
+  );
 }
 
-.container {
+// .container {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+.contacts-list {
+  margin-top: 86px;
+  margin-bottom: 54px;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    margin: -10px;
     flex-wrap: wrap;
-    // margin: -10px;
+    margin-top: 119px;
+    margin-bottom: 81px;
   }
 }
 
-.contacts-card {
+.contacts-item {
   width: 220px;
+  height: 427px;
   padding: 43px 20px;
 
   background-color: #ffffff;
@@ -20,8 +38,6 @@
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
-    height: 427px;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -31,7 +47,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 544px;
+    height: 100%;
+    padding: 50px 32px;
     flex-basis: calc((100% - 6 * 10px) / 3);
     margin: 10px;
   }
@@ -41,8 +58,6 @@
   width: 80px;
   height: 16px;
   margin-bottom: 25px;
-
-  // font-family: DM Sans;
 
   font-weight: 500;
   font-size: 12px;
@@ -66,8 +81,6 @@
   height: 16px;
   margin-bottom: 25px;
 
-  // font-family: DM Sans;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -85,17 +98,6 @@
   color: var(--secondary-text-color);
 }
 
-// .contacts-list {
-//   margin: -10px;
-// }
-
-// .contacts-item {
-//   @media screen and (min-width: 768px) {
-//     flex-basis: calc((100% - 6 * 10px) / 3);
-//     margin: 10px;
-//   }
-// }
-
 .place-info {
   display: block;
   margin-bottom: 25px;
@@ -112,8 +114,6 @@
 
 .place,
 .date {
-  // font-family: DM Sans;
-
   font-weight: 500;
 
   letter-spacing: 0.04em;
@@ -132,8 +132,6 @@
 }
 
 .place-text {
-  // font-family: DM Sans;
-
   font-weight: 500;
 
   letter-spacing: 0.04em;
@@ -152,8 +150,6 @@
 }
 
 .date-text {
-  // font-family: DM Sans;
-
   font-weight: 500;
 
   text-transform: uppercase;
@@ -173,8 +169,6 @@
 
 .contacts-tel,
 .contacts-email {
-  font-family: DM Sans;
-
   font-weight: 500;
 
   color: var(--third-text-color);
@@ -193,7 +187,7 @@
 .buttons {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
   }
 }
 
@@ -206,7 +200,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  // font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
@@ -220,6 +213,10 @@
   background: #d41342;
   border-radius: 22px;
   border: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 14.5px;
+  }
 }
 
 .btn-franchise {
@@ -230,7 +227,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  // font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
