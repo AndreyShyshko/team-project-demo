@@ -528,21 +528,31 @@ body {
 }
 
 .contacts {
-  background: #fff5f6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--secondary-text-color)), color-stop(10%, #fff5f6), to(#fff5f6));
+  background: linear-gradient(to bottom, var(--secondary-text-color) 10%, #fff5f6 10%, #fff5f6 100%);
+}
+
+.contacts-list {
+  margin-top: 86px;
+  margin-bottom: 54px;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 119px;
+    margin-bottom: 81px;
   }
 }
 
-.contacts-card {
+.contacts-item {
   width: 220px;
+  height: 427px;
   padding: 43px 20px;
   background-color: #ffffff;
   border: none;
@@ -552,19 +562,19 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts-card {
-    height: 427px;
+  .contacts-item {
     margin-left: auto;
     margin-right: auto;
   }
-  .contacts-card:not(:last-child) {
+  .contacts-item:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-card {
-    height: 544px;
+  .contacts-item {
+    height: 100%;
+    padding: 50px 32px;
     -ms-flex-preferred-size: calc((100% - 6 * 10px) / 3);
         flex-basis: calc((100% - 6 * 10px) / 3);
     margin: 10px;
@@ -698,7 +708,6 @@ body {
 
 .contacts-tel,
 .contacts-email {
-  font-family: DM Sans;
   font-weight: 500;
   color: var(--third-text-color);
 }
@@ -724,7 +733,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -751,6 +762,12 @@ body {
   background: #d41342;
   border-radius: 22px;
   border: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-our-locations {
+    margin-right: 14.5px;
+  }
 }
 
 .btn-franchise {
