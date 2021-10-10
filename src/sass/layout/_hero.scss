@@ -1,0 +1,224 @@
+.hero {
+    position: relative;
+    background-color: var(--hero-bacground-color);
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  
+    @media (min-width: 768px) {
+      padding: 0 34px;
+    }
+    &_color {
+      color: var(--secondary-text-color);
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 999;
+      @media (min-width: 768px) {
+        font-size: 22px;
+        line-height: 1.14;
+        @media (min-width: 1280px) {
+          font-size: 38px;
+          line-height: 1.15;
+        }
+      }
+      &--red {
+        color: var(--accent-color);
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 96.5%;
+        letter-spacing: 0.04em;
+        position: relative;
+        z-index: 999;
+        @media (min-width: 768px) {
+          font-size: 34px;
+          line-height: 90.5%;
+        }
+        @media (min-width: 1280px) {
+          font-size: 58px;
+          line-height: 90.5%;
+        }
+      }
+    }
+  }
+  
+  .secondary-button {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    z-index: 999;
+  
+    &:first-child {
+      margin-right: 8px;
+  
+      @media (min-width: 1280px) {
+        margin-right: 15px;
+      }
+    }
+  
+    @media (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.28;
+      padding: 15px 25px;
+    }
+  }
+  .hero_buttons {
+    display: flex;
+    margin-top: 20px;
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  
+    @media (min-width: 1280px) {
+      margin-top: 25px;
+    }
+  }
+  .primary {
+    color: var(--accent-color);
+    background-color: var(--secondary-title-color);
+  }
+  .hero_img-ellipse {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    top: 83px;
+  
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 324px;
+      height: 322px;
+      left: 307px;
+      top: 31px;
+    }
+  }
+  .hero_img-ice-cream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    left: 117px;
+    top: 92px;
+  
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 143px;
+      height: 336px;
+      left: 378px;
+      top: 63px;
+    }
+  }
+  .hero_wrapper {
+    padding: 173px 0 160px 0;
+  
+    @media (min-width: 768px) {
+      padding-top: 60px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero_img-milk {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero_img-milk {
+      position: absolute;
+      width: 124px;
+      height: 126px;
+      left: 34px;
+      top: 245px;
+    }
+  }
+  @media (max-width: 767px) {
+    .hero_img-woman {
+      display: none;
+    }
+  }
+  
+  .hero_img-woman {
+    position: absolute;
+    width: 168px;
+    height: 133px;
+    left: 566px;
+    top: 266px;
+  }
+  // .hero_sphere {
+  //   width: 16px;
+  //   height: 16px;
+  //   border-radius: 50%;
+  //   background-color: var(--secondary-title-color);
+  //   // position: absolute;
+  //   // width: 16px;
+  //   // height: 16px;
+  //   // left: 734px;
+  //   // top: 94px;
+  // }
+  // //
+  .hero_block {
+    display: flex;
+  }
+  .hero_wrapper-block {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero_text {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.14;
+    color: var(--accent-color);
+  }
+  .hero_span {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: var(--secondary-text-color);
+  }
+  
+  .hero_img-sphere {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 734px;
+    top: 94px;
+  }
+  
+  .two {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 734px;
+    top: 151px;
+  }
+  .hero_list{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+  }
+  .hero_text{
+    transform: translate(10px , 10px);
+  }
