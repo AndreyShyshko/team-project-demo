@@ -19,9 +19,22 @@
     color: #ffa5ba;
   }
   .about__text {
-    margin-top: 46px;
-    padding: 0 50px;
+    padding: 50px;
   }
+  /*  .back {
+    height: 133px;
+    max-width: 320px;
+    background-image: url('../images/about/milkmob1x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/about/milkmob2x.png');
+    }
+  }*/
   .about__title {
     font-family: Titan One;
     font-style: normal;
@@ -58,7 +71,7 @@
     border-radius: 22px;
     border: none;
     background: #ffffff;
-    padding: 17px 37px;
+    padding: 16px 37px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -75,6 +88,9 @@
   }
   .break {
     margin-top: 23px;
+  }
+  .section__content {
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -135,7 +151,7 @@
     border-radius: 22px;
     border: none;
     background: #ffffff;
-    padding: 17px 37px;
+    padding: 11px 37px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -208,6 +224,36 @@
     &:not(:last-child) {
       margin-bottom: 47px;
     }
+  }
+  /*  .back {
+    height: 534px;
+    max-width: 1282px;
+    background-image: url('../images/about/milk1x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk2x.png');
+    }
+  }*/
+  .about__button {
+    border-radius: 22px;
+    border: none;
+    background: #ffffff;
+    padding: 16px 37px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #d41443;
+    margin-top: 62px;
   }
   .section__content {
     display: flex;

@@ -708,6 +708,12 @@ body {
   .about__text {
     margin-top: 46px;
     padding: 0 50px;
+    height: 400px;
+    max-width: 480px;
+    background-image: url(../images/about/milkmob1x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .about__title {
     font-family: Titan One;
@@ -744,7 +750,7 @@ body {
     border-radius: 22px;
     border: none;
     background: #ffffff;
-    padding: 17px 37px;
+    padding: 16px 37px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -828,7 +834,7 @@ body {
     border-radius: 22px;
     border: none;
     background: #ffffff;
-    padding: 17px 37px;
+    padding: 11px 37px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
