@@ -302,6 +302,7 @@
   }
 }
 .products-button {
+  position: relative;
   background-color: #fff;
   width: 40px;
   height: 40px;
@@ -311,6 +312,9 @@
   fill: #d41443;
 }
 .products-list__icon {
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 30%;
+  left: 30%;
 }
