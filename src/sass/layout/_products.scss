@@ -86,6 +86,7 @@
 
   list-style: none;
   border-radius: 24px;
+  transition: all 0.2s ease-in-out;
 
   @media (min-width: 320px) and (max-width: 767px) {
     height: 485px;
@@ -106,7 +107,11 @@
     margin: 15px;
   }
 }
-
+.products-list__card:focus,
+.products-list__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px rgb(212 20 67 / 20%);
+}
 .products-list__card.ice {
   background: #ffb8ca;
 }
