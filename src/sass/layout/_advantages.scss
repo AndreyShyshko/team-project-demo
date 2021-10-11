@@ -21,11 +21,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -60px;
+    &_item:not(:last-child) {
+      margin-right: -60px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: -90px;
+    &_item:not(:last-child) {
+      margin-right: -90px;
+    }
   }
 }
 .advantages__item {
@@ -39,14 +43,19 @@
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 60px);
-    margin-right: 60px;
     margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 90px);
-    margin-right: 90px;
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
 
     &:hover,
     &:focus {
