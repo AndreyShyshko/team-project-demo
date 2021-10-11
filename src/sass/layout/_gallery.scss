@@ -46,14 +46,12 @@
   display: block;
   position: relative;
   margin-bottom: 6px;
-  transform: scale(1);
-  /*transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);*/
 
   @media screen and (min-width: 1200px) {
     &:hover {
       /*transform: scale(1.35);*/
       z-index: 1;
-      animation: viewScaleMod 500ms linear alternate-reverse;
+      animation: viewScaleMod 1000ms linear;
     }
   }
 
@@ -68,10 +66,10 @@
   }
 
   50% {
-    transform: scale(1.15);
+    transform: scale(1.15) rotate(30deg);
   }
 
   100% {
-    transform: scale(1.35);
+    transform: scale(1.22) rotate(-30deg);
   }
 }
