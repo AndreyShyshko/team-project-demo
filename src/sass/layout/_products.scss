@@ -276,31 +276,39 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 152%;
-
+    width: 200px;
+    height: 124px;
     letter-spacing: 0.04em;
 
-    padding: 30px 39px 30px 41px;
+    margin: 30px 39px 30px 41px;
   }
   @media (min-width: 768px) and (max-width: 1199px) {
-    padding: 30px 11px 40px 11px;
+    margin: 30px 11px 40px 11px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 0.04em;
+    width: 198px;
+    height: 124px;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 32px 44px 62px 44px;
     font-size: 16px;
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+
     line-height: 176%;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    width: 241px;
+    height: 106px;
+    margin: 32px 44px 62px 44px;
+    overflow: hidden;
   }
 }
+
 .products-button {
   position: relative;
   background-color: #fff;
