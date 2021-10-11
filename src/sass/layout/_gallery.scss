@@ -38,9 +38,34 @@
 
 .gallery__picture {
   display: block;
+  position: relative;
   margin-bottom: 6px;
-
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      z-index: 1;
+      animation: viewScaleMod 1000ms linear alternate;
+    }
+  }
+}
+
+@keyframes viewScaleMod {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.15) perspective(400px) rotateX(30deg) translate(-20px, -40px);
+  }
+
+  85% {
+    transform: scale(1.22) perspective(400px) rotateY(-30deg) translate(20px, 40px);
+  }
+
+  100% {
+    transform: scale(1) perspective(400px);
   }
 }
