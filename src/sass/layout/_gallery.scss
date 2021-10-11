@@ -23,14 +23,14 @@
 
   margin-right: 6px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    /*&:hover {
+      margin-right: 20px;
+    }*/
   }
 
-  @media screen and (min-width: 1200px) {
-    &:hover .gallery__picture {
-      margin: 0 15px;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -46,16 +46,32 @@
   display: block;
   position: relative;
   margin-bottom: 6px;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  /*transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);*/
+
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      /*transform: scale(1.35);*/
+      z-index: 1;
+      animation: viewScaleMod 500ms linear alternate-reverse;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    &:hover {
-      transform: scale(1.25);
-      z-index: 1;
-    }
+@keyframes viewScaleMod {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1.35);
   }
 }
