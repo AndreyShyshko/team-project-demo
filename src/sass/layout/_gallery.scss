@@ -40,16 +40,15 @@
   display: block;
   position: relative;
   margin-bottom: 6px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 1200px) {
     &:hover {
       z-index: 1;
       animation: viewScaleMod 1000ms linear alternate;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
