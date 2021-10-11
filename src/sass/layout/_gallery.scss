@@ -37,18 +37,17 @@
 
 .gallery_thumb {
   margin-bottom: 6px;
+  @media screen and (min-width: 1200px) {
+    &:hover .gallery__picture {
+      position: relative;
+      z-index: 1;
+      animation: viewScaleMod 1000ms linear 50ms alternate;
+    }
+  }
 }
 
 .gallery__picture {
   display: block;
-  position: relative;
-
-  @media screen and (min-width: 1200px) {
-    &:hover {
-      z-index: 1;
-      animation: viewScaleMod 1000ms linear alternate;
-    }
-  }
 }
 
 @keyframes viewScaleMod {
@@ -56,15 +55,19 @@
     transform: scale(1);
   }
 
-  20% {
+  25% {
     transform: scale(1.15) perspective(400px) rotateX(30deg) translate(-20px, -40px);
   }
 
-  85% {
+  50% {
+    transform: scale(1.22) perspective(400px) rotateY(-15deg) translate(10px, 20px);
+  }
+
+  75% {
     transform: scale(1.22) perspective(400px) rotateY(-30deg) translate(20px, 40px);
   }
 
   100% {
-    transform: scale(1) perspective(400px);
+    transform: scale(1);
   }
 }
