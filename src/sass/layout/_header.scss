@@ -1,14 +1,17 @@
+.header {
+  background-color: var(--header-bacground-color);
+  padding-top: 37px;
+}
+
 .header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
