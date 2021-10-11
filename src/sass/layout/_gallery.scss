@@ -23,12 +23,6 @@
 
   margin-right: 6px;
 
-  @media screen and (min-width: 1200px) {
-    /*&:hover {
-      margin-right: 20px;
-    }*/
-  }
-
   &:last-child {
     margin-right: 0;
   }
@@ -49,9 +43,8 @@
 
   @media screen and (min-width: 1200px) {
     &:hover {
-      /*transform: scale(1.35);*/
       z-index: 1;
-      animation: viewScaleMod 1000ms linear;
+      animation: viewScaleMod 1000ms linear alternate;
     }
   }
 
@@ -65,11 +58,15 @@
     transform: scale(1);
   }
 
-  50% {
+  20% {
     transform: scale(1.15) perspective(400px) rotateX(30deg) translate(-20px, -40px);
   }
 
+  85% {
+    transform: scale(1.22) perspective(400px) rotateY(-30deg) translate(20px, 40px);
+  }
+
   100% {
-    transform: scale(1.22) perspective(400px) rotateY(-30deg) translate(25px, 45px);
+    transform: scale(1) perspective(400px);
   }
 }
