@@ -4,9 +4,9 @@
   height: auto;
   // padding: 0 20px;
   overflow: hidden;
-@media (max-width:767px) {
-  width: 100%;
-}
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   @media (min-width: 768px) {
     width: 100vw;
     padding: 0 34px;
@@ -129,8 +129,8 @@
   height: 344px;
   left: 36px;
   top: 83px;
-  @media (max-width: 767px){
-    left: 30% ;
+  @media (max-width: 767px) {
+    left: 30%;
   }
   @media (min-width: 768px) {
     position: absolute;
@@ -153,9 +153,9 @@
   height: 410px;
   left: 117px;
   top: 92px;
-@media (max-width:767px) {
-  left: 40%;
-}
+  @media (max-width: 767px) {
+    left: 40%;
+  }
 
   @media (min-width: 768px) {
     position: absolute;
@@ -262,6 +262,9 @@
   color: var(--accent-color);
   transform: translate(4px, 4px);
   z-index: 999;
+  @media (min-width: 768px) {
+    transform: translate(-2px, 1px);
+  }
   @media (min-width: 1200px) {
     font-size: 46px;
     line-height: 1.15;
@@ -285,22 +288,34 @@
 }
 .secondary-span {
   transform: translate(-30px, -21px);
+
+  @media (min-width: 768px) {
+    transform: translate(-15px, -21px);
+  }
 }
 .hero_img-sphere {
   width: 16px;
   height: 16px;
   transform: translate(-4px, 1px);
+  @media (min-width: 768px) {
+    transform: translate(35px, -1px);
+  }
+
   @media (min-width: 1200px) {
     position: absolute;
     width: 30px;
     height: 30px;
     left: 474px;
     top: 69px;
+    transform: translate(-6px, -1px);
   }
 }
 
 .two {
   transform: translate(26px, 10px);
+  @media (min-width: 768px) {
+    transform: translate(35px, 7px);
+  }
   @media (min-width: 1200px) {
     transform: translate(-5px, 35px);
   }
@@ -313,6 +328,11 @@
 
 .hero_paragraph {
   transform: translate(-15px, 9px);
+
+  @media (min-width: 768px) {
+    transform: translate(-4px, 9px);
+  }
+
   @media (min-width: 1200px) {
     padding-top: 28px;
     padding-left: 17px;
@@ -375,7 +395,7 @@
 //     left: 295px;
 //     top: 583px;
 //   }
- 
+
 // }
 // @media (max-width: 767px) {
 //   .hero_img-arrow{
@@ -390,7 +410,7 @@
 
 .hero_svg-arrow {
   fill: var(--accent-color);
-
+  cursor: pointer;
   background-color: var(--secondary-title-color);
   border-radius: 50%;
   display: inline-block;
@@ -402,10 +422,10 @@
   border: none;
   padding: 4px;
 
-@media (max-width:767px) {
-  display: none;
-}
-  
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   @media (min-width: 1200px) {
     position: absolute;
     width: 26px;
@@ -420,8 +440,8 @@
 //   transform: rotate(360deg);
 // }
 
-@media (max-width:767px) {
-  .hero_primary-text{
+@media (max-width: 767px) {
+  .hero_primary-text {
     padding-left: 20px;
   }
 }
