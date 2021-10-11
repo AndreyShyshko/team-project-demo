@@ -66,10 +66,10 @@
   }
 
   50% {
-    transform: scale(1.15) rotate(30deg);
+    transform: scale(1.15) perspective(400px) rotateX(30deg) translate(-20px, -40px);
   }
 
   100% {
-    transform: scale(1.22) rotate(-30deg);
+    transform: scale(1.22) perspective(400px) rotateY(-30deg) translate(25px, 45px);
   }
 }
