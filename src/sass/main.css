@@ -924,32 +924,35 @@ body {
   }
 }
 
-.contacts {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffffff), color-stop(5%, #fff5f6), to(#fff5f6));
-  background: linear-gradient(#ffffff 5%, #fff5f6 5%, #fff5f6 100%);
+@media screen and (max-width: 479px) {
+  .contacts {
+    padding: 0 50px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(0, #fff5f6), to(#fff5f6));
+    background: linear-gradient(180deg, #fff 5%, #fff5f6 0, #fff5f6);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contacts {
+    padding: 0 50px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(0, #fff5f6), to(#fff5f6));
+    background: linear-gradient(180deg, #fff 5%, #fff5f6 0, #fff5f6);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
-    background-color: linear-gradient(to bottom, var(--secondary-text-color) 14%, #fff5f6 14%, #fff5f6 100%);
+    padding: 0 36px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #fff), color-stop(0, #fff5f6), to(#fff5f6));
+    background: linear-gradient(180deg, #fff 15%, #fff5f6 0, #fff5f6);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts {
     padding: 0 115px;
-    background-image: url(../images/contacts/sectionbg2-min.png);
-    height: 382px;
-    max-width: 1280px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../images/contacts/sectionbg2-2x-min.png);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #fff), color-stop(0, #fff5f6), to(#fff5f6));
+    background: linear-gradient(180deg, #fff 15%, #fff5f6 0, #fff5f6);
   }
 }
 
@@ -980,8 +983,6 @@ body {
 }
 
 .contacts-item {
-  width: 220px;
-  height: 427px;
   padding: 43px 20px;
   background-color: #ffffff;
   border: none;
@@ -1004,11 +1005,14 @@ body {
           box-shadow: 0px 0px 10px 5px rgba(212, 20, 67, 0.1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .contacts-item {
-    margin-left: auto;
-    margin-right: auto;
+    width: 350px;
+    margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 767px) {
   .contacts-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -1016,7 +1020,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts-item {
-    height: 100%;
+    width: 220px;
     padding: 50px 32px;
     -ms-flex-preferred-size: calc((100% - 6 * 10px) / 3);
         flex-basis: calc((100% - 6 * 10px) / 3);
@@ -1027,7 +1031,6 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-item {
     width: 330px;
-    height: 572px;
     padding: 51px 44px 62px 44px;
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
@@ -1326,8 +1329,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .btn-franchise {
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-franchise:hover, .btn-franchise:focus {
     background: #ecebeb;
