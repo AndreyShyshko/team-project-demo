@@ -3,19 +3,21 @@
         <ul class="hero_list">
           <li class="hero_item">
             <div class="hero_block">
+              <div class="hero_block">
+                <img
+                  class="hero_img-sphere "
+                  srcset="
+                  ../src/images/hero/sphere-desktop.png  1x,
+                  ../src/images/hero/sphere-desktop@2x.png  2x
+                  "
+                  src="../src/images/hero/sphere-desktop.png "
+                  alt="Ellipse-mini"
+                />
               <h2 class="hero_text">
                 16 <br />
                 <span class="hero_span"> cafes</span>
               </h2>
-              <img
-                class="hero_img-sphere"
-                srcset="
-                  ../src/images/hero/Ellipse-mini.png    1x,
-                  ../src/images/hero/Ellipse-mini@2x.png 2x
-                "
-                src="../src/images/hero/Ellipse-mini.png "
-                alt="Ellipse-mini"
-              />
+             
             </div>
           </li>
           <li class="hero_item secondary-item">
@@ -23,10 +25,10 @@
               <img
                 class="hero_img-sphere two"
                 srcset="
-                  ../src/images/hero/Ellipse-mini.png    1x,
-                  ../src/images/hero/Ellipse-mini@2x.png 2x
+                ../src/images/hero/sphere-desktop.png  1x,
+                ../src/images/hero/sphere-desktop@2x.png  2x
                 "
-                src="../src/images/hero/Ellipse-mini.png "
+                src="../src/images/hero/sphere-desktop.png "
                 alt="Ellipse-mini"
               />
               <h2 class="hero_text">
@@ -55,91 +57,106 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="hero_buttons">
-          <button type="button" class="secondary-button">Products</button>
-          <button type="button" class="secondary-button primary">How it’s made?</button>
-        </div> -->
+   
 
         <div class="hero_main-img">
           <div class="hero_ice-cream">
-            <img
-              class="hero_img-ellipse"
-              srcset="../src/images/hero/Ellipse.png 1x, ../src/images/hero/Ellipse@2x.png 2x"
-              src="../src/images/hero/Ellipse.png"
-              alt="Ellipse"
-            />
+            <picture class="hero_img-ellipse">
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ../src/images/hero/Ellipse-desktop.png    1x,
+                  ../src/images/hero/Ellipse-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ../src/images/hero/Ellipse-tablet.png    1x,
+                  ../src/images/hero/Ellipse-tablet@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:320px )"
+                srcset="
+                  ../src/images/hero/Ellipse-tablet.png    1x,
+                  ../src/images/hero/Ellipse-tablet@2x.png 2x
+                "
+              />
+              <img src="../src/images/hero/Ellipse-desktop.png" alt="Ellipse" />
+            </picture>
 
-            <img
-              class="hero_img-ice-cream"
-              srcset="
-                ../src/images/hero/big-ice-cream.png    1x,
-                ../src/images/hero/big-ice-cream@2x.png 2x
-              "
-              src="../src/images/hero/big-ice-cream.png "
-              alt="ice-cream"
-            />
-            <!-- <picture>
+          
+            <picture class="hero_img-ice-cream">
               <source
                 srcset="
-                  ../src/images/hero/big-ice-cream.png 1x,
-                  ../src/images/hero/big-ice-cream.png 2x
+                  ../src/images/hero/ice-cream-dekstop.png    1x,
+                  ../src/images/hero/ice-cream-dekstop@2x.png 2x
                 "
                 media="(min-width:1200px )"
               />
               <source
                 srcset="
-                  ../src/images/hero/ice-cream-tablet.png   1x,
-                  ../src/images/hero/ice-cream-tablet@2.png 2x
+                  ../src/images/hero/ice-cream-tablet.png    1x,
+                  ../src/images/hero/ice-cream-tablet@2x.png 2x
                 "
                 media="(min-width:768px )"
               />
               <source
                 srcset="
-                  ../src/images/hero/ice-cream-mobile.png   1x,
-                  ../src/images/hero/ice-cream-mobile@2.png 2x
+                  ../src/images/hero/ice-cream-mobile.png    1x,
+                  ../src/images/hero/ice-cream-mobile@2x.png 2x
                 "
                 media="(min-width:320px )"
               />
-              <img src="../images/hero/ice-cream-mobile.png" alt="icecream" />
-            </picture> -->
+              <img src="../src/images/hero/ice-cream-mobile.png " alt="icecream" />
+            </picture>
           </div>
         </div>
-        <img
-          class="hero_img-milk"
-          srcset="
-            ../src/images/hero/milk-in-containers.png    1x,
-            ../src/images/hero/milk-in-containers@2x.png 2x
-          "
-          src="../src/images/hero/milk-in-containers.png  
-         "
-          alt="milk"
-        />
-        <!-- <div class="hero_img-arrow " > -->
+
+        <picture class="hero_img-milk">
+          <source
+            srcset="
+              ../src/images/hero/milk-dekstop.png    1x,
+              ../src/images/hero/milk-dekstop@2x.png 2x
+            "
+            media="(min-width:1200px )"
+          />
+          <source
+            srcset="../src/images/hero/milk-tablet.png 1x, ../src/images/hero/milk-tablet@2x.png 2x"
+            media="(min-width:768px )"
+          />
+          <img src="../src/images/hero/milk-tablet.png  " alt="milk" />
+        </picture>
+
         <p class="hero_milk-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <!-- <img
-          class="hero_img-arrow"
-          srcset="../src/images/hero/arrow.png 1x, ../src/images/hero/arrow@2x.png 2x"
-          src="../src/images/hero/arrow.png  "
-          alt="arrow"
-        /> -->
+     
         <div class="hero_svg">
           <svg class="hero_svg-arrow" width="15px" height="15px">
             <use href="../src/images/symbol-defs.svg#icon-arrow-right"></use>
           </svg>
         </div>
         <div>
-          <img
-            class="hero_img-woman"
-            srcset="
-              ../src/images/hero/woman-with-ice-cream.png    1x,
-              ../src/images/hero/woman-with-ice-cream@2x.png 2x
-            "
-            src="../src/images/hero/woman-with-ice-cream.png"
-            alt="woman"
-          />
+          <picture class="hero_img-woman">
+            <source
+              media="(min-width:1200px )"
+              srcset="
+                ../src/images/hero/girl-dekstop.png    1x,
+                ../src/images/hero/girl-dekstop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width:768px )"
+              srcset="
+                ../src/images/hero/girl-tablet.png    1x,
+                ../src/images/hero/girl-tablet@2x.png 2x
+              "
+            />
+            <img src="../src/images/hero/girl-tablet.png " alt="girl" />
+          </picture>
         </div>
       </div>
     </section>
