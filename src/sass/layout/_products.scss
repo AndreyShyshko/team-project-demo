@@ -2,15 +2,12 @@
   text-align: center;
 
   @media (min-width: 480px) and (max-width: 767px) {
-    padding-bottom: 121px;
-    padding-top: 98px;
+    padding: 121px 98px;
   }
-
   @media (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 122px;
     padding-top: 112px;
   }
-
   @media screen and (min-width: 1200px) {
     padding-bottom: 119px;
     padding-top: 127px;
