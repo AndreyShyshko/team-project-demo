@@ -310,6 +310,9 @@
   border: none;
   border-radius: 50%;
   fill: #d41443;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  transition: all 0.2s ease-in-out;
 }
 .products-list__icon {
   position: absolute;
@@ -317,4 +320,15 @@
   height: 15px;
   bottom: 30%;
   left: 30%;
+
+  transition: all 0.5s ease-in-out;
+}
+.products-button:focus,
+.products-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 24px -2px #fdfbfc;
+}
+.products-button:focus .products-list__icon,
+.products-button:hover .products-list__icon {
+  transform: rotate(1turn);
 }
