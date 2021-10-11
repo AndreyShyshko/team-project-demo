@@ -19,7 +19,8 @@
 .advantages {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
     margin-right: -60px;
   }
 
