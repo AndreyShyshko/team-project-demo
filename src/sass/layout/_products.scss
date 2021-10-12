@@ -108,6 +108,7 @@
     margin: 15px;
   }
 }
+
 .products-list__card:focus,
 .products-list__card:hover {
   transform: scale(1.05);
@@ -127,8 +128,10 @@
   position: absolute;
   content: '';
   display: block;
+  transform: translate(-50%, 0);
   bottom: 70%;
-  left: 5%;
+  left: 50%;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +147,6 @@
   @media screen and (min-width: 1200px) {
     width: 335px;
     height: 335px;
-    left: -5%;
   }
 }
 .ice::before {
