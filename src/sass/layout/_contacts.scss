@@ -391,6 +391,21 @@
   border-radius: 10px;
 }
 
+.iframe-map {
+  width: 180px;
+  height: 200px;
+
+  @media screen and (min-width: 768px) {
+    width: 410px;
+    height: 300px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 405px;
+  //   height: 330px;
+  // }
+}
+
 .modal__text {
   font-size: 16px;
   line-height: 1.5;
