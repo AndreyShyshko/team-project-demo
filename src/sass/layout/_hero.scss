@@ -478,6 +478,18 @@
   }
 }
 
+.hero_img-woman :hover,
+.hero_img-woman :focus {
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+.hero_img-milk:hover,
+.hero_img-milk:focus {
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
 .hero_img-ice-cream :hover,
 .hero_img-ice-cream:focus {
   -webkit-animation: pulsing 2s infinite;
