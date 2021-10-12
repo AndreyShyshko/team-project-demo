@@ -33,20 +33,20 @@
 }
 
 .contacts-list {
-  margin-top: 86px;
+  // margin-top: 86px;
   margin-bottom: 54px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     margin: -10px;
     flex-wrap: wrap;
-    margin-top: 119px;
+    // margin-top: 119px;
     margin-bottom: 81px;
   }
 
   @media screen and (min-width: 1200px) {
     margin: -15px;
-    margin-top: 132px;
+    // margin-top: 132px;
     margin-bottom: 86px;
   }
 }
@@ -86,7 +86,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 220px;
+    // width: 220px;
     // height: 554px;
     padding: 50px 32px;
     flex-basis: calc((100% - 6 * 10px) / 3);
@@ -94,7 +94,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 330px;
+    // width: 330px;
     // height: 572px;
     padding: 51px 44px 62px 44px;
     flex-basis: calc((100% - 6 * 15px) / 3);
@@ -389,6 +389,21 @@
   background: #fff;
   // box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
   border-radius: 10px;
+}
+
+.iframe-map {
+  width: 180px;
+  height: 200px;
+
+  @media screen and (min-width: 768px) {
+    width: 410px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 505px;
+    height: 330px;
+  }
 }
 
 .modal__text {
