@@ -174,21 +174,26 @@
   max-width: 280px;
   margin: 0 auto;
 
-  margin-top: 80px;
-
   @media screen and (min-width: 768px) {
     max-width: 620px;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 121px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 926px;
-    margin-top: 123px;
   }
 }
+.layout {
+  padding-top: 80px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 123px;
+  }
+}
 .blog-container {
   padding-left: 15px;
   padding-right: 15px;
