@@ -153,10 +153,13 @@
   height: 410px;
   left: 117px;
   top: 92px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
   @media (max-width: 767px) {
     left: 40%;
   }
-
+ 
   @media (min-width: 768px) {
     position: absolute;
     width: 143px;
@@ -176,6 +179,9 @@
 .hero_wrapper {
   padding: 173px 0 160px 0;
   position: relative;
+  @media (min-width: 480px){
+    max-width: 480px;
+  }
   @media (max-width: 767px) {
     margin: 0 auto;
   }
@@ -196,12 +202,14 @@
   }
 }
 
+
+
 @media (min-width: 768px) {
   .hero_img-milk {
     position: absolute;
     width: 124px;
     height: 126px;
-    left: 34px;
+    left: 1px;
     top: 245px;
   }
 }
@@ -210,7 +218,7 @@
     position: absolute;
     width: 188px;
     height: 191px;
-    left: 77px;
+    left: -36px;
     top: 429px;
   }
 }
@@ -292,6 +300,15 @@
   @media (min-width: 768px) {
     transform: translate(-15px, -21px);
   }
+  @media (min-width: 1200px){
+    transform: translate(-6px, -42.2px);  }
+}
+
+.secondary-spantrucks{
+  @media (min-width: 768px) {
+transform: translate(6px, -30.6px);  }
+@media (min-width: 1200px){
+  transform: translate(28px, -60.6px);}
 }
 .hero_img-sphere {
   width: 16px;
@@ -364,13 +381,13 @@
   position: absolute;
   width: 114px;
   height: 48px;
-  left: 154px;
+  left: 121px;
   top: 292px;
   @media (min-width: 1200px) {
     position: absolute;
     width: 200px;
     height: 78px;
-    left: 295px;
+    left: 182px;
     top: 485px;
     font-size: 14px;
     line-height: 140%;
@@ -417,10 +434,16 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  left: 154px;
+  left: 121px;
   top: 347px;
   border: none;
   padding: 4px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 24px -2px rgba(212, 20, 67, 0.5);
+  }
 
   @media (max-width: 767px) {
     display: none;
@@ -430,18 +453,18 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    left: 298px;
+    left: 182px;
     top: 587px;
     padding: 5px;
   }
 }
-// .hero_svg-arrow:hover,
-// .hero_svg-arrow:focus {
-//   transform: rotate(360deg);
-// }
+
+
 
 @media (max-width: 767px) {
   .hero_primary-text {
     padding-left: 20px;
   }
 }
+
+
