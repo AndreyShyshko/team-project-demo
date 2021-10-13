@@ -232,6 +232,7 @@
   height: 133px;
   left: 566px;
   top: 266px;
+  
   @media (min-width: 1200px) {
     position: absolute;
     width: 293px;
@@ -477,7 +478,11 @@
     padding-left: 115px;
   }
 }
-
+@media (min-width: 768px) {
+  .hero_primary-text {
+    padding-top: 45px;
+  }
+}
 .hero_img-woman :hover,
 .hero_img-woman :focus {
   -webkit-animation: pulsing 2s infinite;
