@@ -3,11 +3,11 @@
   /*
   @media screen and (min-width: 768px) {
     margin-bottom: 244px;
-  }
+  }*/
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 281px;
-  }*/
+    margin-bottom: 75px;
+  }
 }
 
 .blog__card-image {
@@ -284,7 +284,7 @@
   transition: 800ms ease;
 }
 
-#select__item-2:checked ~ .controls .item-2,
+#select__item-2:checked ~ .controls .item-2 .control__item-main,
 #select__item-3:checked ~ .controls .item-3 {
   transform: scale(1.25);
   background-color: #d31342;
