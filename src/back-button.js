@@ -14,10 +14,7 @@
   }
 
   function backToTop() {
-    if (window.pageYOffset > 0) {
-      window.scrollBy(0, -80);
-      setTimeout(backToTop, 0);
-    }
+    window.scrollTo(0, 0);
   }
 
   var goTopBtn = document.querySelector('.back_to_top');
