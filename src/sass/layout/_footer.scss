@@ -1,7 +1,6 @@
 .footer {
   padding-top: 113px;
   width: 100%;
-  border-bottom: 1px solid #e1e1e1;
   background: #fff5f6;
   @media screen and (min-width: 768px) {
     padding-top: 158px;
@@ -95,11 +94,12 @@
 }
 
 .copyrights {
-  width: 100%;
+  max-width: 100%;
   padding: 22px 0px 25px 0px;
   display: flex;
   justify-content: center;
   background: #fff5f6;
+  border-top: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     padding: 29px 0px 18px 0px;
   }
