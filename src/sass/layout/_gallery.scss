@@ -35,16 +35,21 @@
   }
 }
 
-.gallery_thumb {
-  margin-bottom: 6px;
+.gallery__thumb {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 3px;
+  }
+
   @media screen and (min-width: 1200px) {
     animation-fill-mode: forwards;
     &:hover .gallery__picture {
       position: relative;
       z-index: 1;
-      animation: viewScaleMod 850ms linear 65ms forwards;
+      animation: viewScaleMod 800ms linear 55ms forwards;
     }
   }
+
+  margin-bottom: 6px;
 }
 
 .gallery__picture {
